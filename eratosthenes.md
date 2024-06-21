@@ -91,7 +91,7 @@ for (int k = 2; k <= n; k++) {
 		p.push_back(k);
 	}
 	for (int x : p) {
-	    if (x > d[k] || x * d[k] > n)
+	    if (x > d[k] || x * k > n)
             break;
 	    d[k * x] = x;
 	}
